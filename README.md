@@ -47,4 +47,3 @@ npm run verify   # lint + typecheck + 228 tests + 15-case deterministic eval
 ```
 
 **228 tests pass across 14 files. The eval scores 13 of 13 cases, 0 failed, at 100% divergence accuracy.** Both run with no API keys configured and no network — the load-bearing claims of this product do not depend on a model being reachable. Every number in these documents was produced by running the command named beside it.
-# docs
