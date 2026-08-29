@@ -16,9 +16,9 @@ GapFinder reads a student's working, verifies every line against the one above i
 | --- | --- | --- |
 | `01_GapFinder_Overview.pdf` | What is GapFinder, and why does it matter? | 6 |
 | `02_GapFinder_Product.pdf` | How does the product work, screen by screen? | 8 |
-| `03_GapFinder_AI.pdf` | How does the AI work, and where does code decide instead? | 7 |
+| `03_GapFinder_AI.pdf` | How does the AI work — and where is it deliberately not used? | 8 |
 | `04_GapFinder_Architecture.pdf` | How is it engineered? | 8 |
-| `05_GapFinder_Evidence.pdf` | What was built, and how do I verify it? | 8 |
+| `05_GapFinder_Evidence.pdf` | Did they actually build it, and what doesn't it do? | 9 |
 | `06_GapFinder_Judge_Guide.pdf` | What exactly should I evaluate, and how? | 5 |
 | `diagrams/` | The five source diagrams, at full resolution | — |
 
@@ -36,14 +36,9 @@ GapFinder reads a student's working, verifies every line against the one above i
 
 A model reads handwriting and phrases teaching. It is never the authority on whether a step is correct — that is deterministic algebra, which is why the product can point at line 2 by name.
 
-## What's built
-
-31 pages · 40 API routes · 30 data models · 22 seeded concepts · 58 curated knowledge chunks · 17 misconception codes · 14 computed diagram renderers — live on Vercel.
-
 ## Verifying the claims
 
 ```bash
-npm run verify   # lint + typecheck + 228 tests + 15-case deterministic eval
+npm run verify   # lint + typecheck + 289 tests + 4-dimension deterministic eval
 ```
-
-**228 tests pass across 14 files. The eval scores 13 of 13 cases, 0 failed, at 100% divergence accuracy.** Both run with no API keys configured and no network — the load-bearing claims of this product do not depend on a model being reachable. Every number in these documents was produced by running the command named beside it.
+see
